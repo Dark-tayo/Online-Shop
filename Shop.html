@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersey Online Store</title>
+    <link rel="stylesheet" href="shoop.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header class="shop-header">
+        <h1>Welcome to Eyitayo Jersey Store</h1>
+    </header>
+
+    <main>
+        <!-- Jerseys Section -->
+        <section id="shop-items">
+            <h2>Available Jerseys</h2>
+            <div id="items-container"></div>
+        </section>
+
+        <!-- Order Form -->
+        <section id="order-form-section">
+            <h2>Place Your Order</h2>
+            <form id="order-form" method="POST" action="php/form-handler.php">
+                <label for="item-id">Jersey ID:</label>
+                <input type="text" id="item-id" name="item-id" required placeholder="Enter Jersey ID">
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+
+        <!-- Payment Page -->
+        <section id="payment-page">
+            <h2>Payment</h2>
+            <p>After placing your order, proceed to payment below:</p>
+            <a href="php/payment-handler.php">Go to Payment</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Eyitayo Jersey Store</p>
+    </footer>
+</body>
+</html>

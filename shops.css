@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    background-image: url('Arsenal.jpeg'); 
+    background-position: center;
+    background-size: cover;
+    background-color: #f0f0f0;  
+    height: 100vh;
+}
+.navbar { 
+    width: 90%; 
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; 
+}
+
+.icon {
+    height: 75px;
+}
+
+.logo {
+    color: yellow;
+    font-family: 'onyx';
+    font-size: 2rem; 
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 50px; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+.content {
+    text-align: center; 
+    color: white;
+    padding: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start;
+        height: auto;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content h1 {
+        font-size: 2rem; 
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem; 
+    }
+
+    .content h1 {
+        font-size: 1.5rem; 
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    ul li a {
+        font-size: 0.8rem; 
+    }
+} 
